@@ -1,9 +1,12 @@
-Several C++ projects for building audio/music effects. Originally for use with Synthedit SDK to assemble VST plugins, but probably adaptable to other platforms.
+Several C++ projects for building efficient audio/music effects. Originally for use with Synthedit SDK to assemble VST plugins, but probably adaptable to other platforms. Detailed descriptions can be found in the `cpp` source files.
 
-### BADHEAD v1.0
+### BADHEAD v1.0 (reg_distort)
 
-Tube amp simulation with variable clipping hardness,
-bias (from symmetrical to rectified), and power supply regulation.
+Tube amp simulation built from spliced hyperbolic functions. Provides variable:
+* clipping hardness
+* bias (from symmetrical to rectified)
+* crossover distortion
+* power supply regulation
 
 ### ENVELOPER v1.01
 
