@@ -1,0 +1,30 @@
+Notes for NewWave filter
+RG 06/26/04
+
+A "dirty" noise at start and end of notes occurs on the
+laptop. Looking at the unfiltered input directly (using
+Wave Recorder module), there is significant ringing at
+about 25 Hz following notes (and preceding?!). Maybe this
+is an artifact of the laptop's A-D converter or analog
+stage or some digital HP filter upstream.
+
+Or maybe it is just a characteristic of many inputs to
+have a LF modulation on rollout, which can fool newwave
+into sounding dirty.
+
+Using a HP filter around 400 Hz helps a lot. But make sure
+this filter doesn't itself ring.
+
+RG 06/29/04
+
+More likely is that the ringing is the mic. I compared
+the laptop internal mic vs the Sound Concepts mic, and
+also the SC mic using UA-20 interface. All were about
+the same however.
+
+Ah, I think the culprit is actually room reflections,
+so you get the delayed transient, at lower amplitude,
+tacked onto the decay. I tested this with damping material
+(a comforter draped over the source+mic) and that eliminated
+most of the decay ringing.
+

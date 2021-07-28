@@ -1,0 +1,20 @@
+rnd loop module:
+
+params: 
+
+max buffer (ms)
+fade (ms)
+
+inputs:
+
+gate (usu midi2cv)
+input
+gain (usu ADSR)
+mean
+variance
+
+
+after gate triggers, fade output, clear buffer and
+record up to max buffer, pass to output.
+after ea rnd delay, mix in a copy of buffer,
+fading out current loop FADE ms later.
